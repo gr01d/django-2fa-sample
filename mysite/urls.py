@@ -20,6 +20,6 @@ from two_factor.urls import urlpatterns as tf_urls
 
 #admin.site.__class__ = AdminSiteOTPRequired
 urlpatterns = [
-    path('', include(tf_urls)),
+    path('', include('app.urls')),
     path('admin/', admin.site.urls),
 ]
